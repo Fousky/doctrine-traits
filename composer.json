@@ -1,0 +1,20 @@
+{
+    "name": "fousky/doctrine-traits",
+    "description": "Doctrine traits for annotation mapping",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.0",
+        "doctrine/orm": "^2.5"
+    },
+    "authors": [
+        {
+            "name": "Lukáš Brzák",
+            "email": "lukas.brzak@email.cz"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": { "Fousky\\Traits\\": "src" }
+    }
+}
