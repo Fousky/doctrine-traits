@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait IdTrait
 {
     /**
-     * @var integer|null
+     * @var int|null
      *
      * @ORM\Id()
      * @ORM\GeneratedValue(strategy="AUTO")

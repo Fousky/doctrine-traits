@@ -8,7 +8,7 @@ namespace Fousky\Traits\Active;
 interface ActivableInterface
 {
     /**
-     * @return boolean
+     * @return bool
      */
     public function isActive(): bool;
 

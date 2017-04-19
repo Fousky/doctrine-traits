@@ -12,7 +12,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait ConfirmationTrait
 {
     /**
-     * @var boolean
+     * @var bool
      *
      * @ORM\Column(name="is_confirmed", type="boolean", nullable=false, options={"default":"0"})
      */
