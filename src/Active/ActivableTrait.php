@@ -5,14 +5,14 @@ namespace Fousky\Traits\Active;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * `active` OR `inactive` (disabled)
+ * `active` OR `inactive` (disabled).
  *
  * @author Lukáš Brzák <lukas.brzak@aquadigital.cz>
  */
 trait ActivableTrait
 {
     /**
-     * @var boolean
+     * @var bool
      *
      * @ORM\Column(name="is_active", type="boolean", nullable=false, options={"default":"1"})
      */
