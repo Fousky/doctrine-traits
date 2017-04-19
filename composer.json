@@ -16,5 +16,6 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": { "Fousky\\Traits\\": "src" }
-    }
+    },
+    "version": "1.0.0"
 }
