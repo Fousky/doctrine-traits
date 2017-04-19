@@ -1,7 +1,7 @@
 # fousky/doctrine-traits
 Make Doctrine annotation mapping simply - use prepared traits ;-)
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Fousky/doctrine-traits/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Fousky/doctrine-traits/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Fousky/doctrine-traits/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Fousky/doctrine-traits/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/Fousky/doctrine-traits/badges/build.png?b=master)](https://scrutinizer-ci.com/g/Fousky/doctrine-traits/build-status/master)
 
 ## 1. Instalation via Composer
 
