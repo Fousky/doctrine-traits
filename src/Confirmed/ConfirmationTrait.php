@@ -55,7 +55,7 @@ trait ConfirmationTrait
     /**
      * @return null|string
      */
-    public function getConfirmationToken()
+    public function getConfirmationToken(): ?string
     {
         return $this->confirmationToken;
     }
@@ -83,7 +83,7 @@ trait ConfirmationTrait
     /**
      * @return \DateTime|null
      */
-    public function getConfirmedAt()
+    public function getConfirmedAt(): ?\DateTime
     {
         return $this->confirmedAt;
     }

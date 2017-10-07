@@ -33,7 +33,7 @@ trait TimestampableTrait
     /**
      * @ORM\PrePersist()
      */
-    public function _timestampable_prePersist()
+    public function _timestampable_prePersist(): void
     {
         $this->createdAt = new \DateTime();
     }
@@ -41,7 +41,7 @@ trait TimestampableTrait
     /**
      * @ORM\PreUpdate()
      */
-    public function _timestampable_preUpdate()
+    public function _timestampable_preUpdate(): void
     {
         $this->updatedAt = new \DateTime();
     }
@@ -49,7 +49,7 @@ trait TimestampableTrait
     /**
      * @return \DateTime
      */
-    public function getCreatedAt(): \DateTime
+    public function getCreatedAt(): ?\DateTime
     {
         return $this->createdAt;
     }
@@ -69,7 +69,7 @@ trait TimestampableTrait
     /**
      * @return \DateTime|null
      */
-    public function getUpdatedAt()
+    public function getUpdatedAt(): ?\DateTime
     {
         return $this->updatedAt;
     }

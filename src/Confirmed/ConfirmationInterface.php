@@ -22,7 +22,7 @@ interface ConfirmationInterface
     /**
      * @return null|string
      */
-    public function getConfirmationToken();
+    public function getConfirmationToken(): ?string;
 
     /**
      * @return bool
@@ -39,7 +39,7 @@ interface ConfirmationInterface
     /**
      * @return \DateTime|null
      */
-    public function getConfirmedAt();
+    public function getConfirmedAt(): ?\DateTime;
 
     /**
      * @param \DateTime|null $confirmedAt

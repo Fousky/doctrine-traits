@@ -33,7 +33,7 @@ trait ActivableTrait
      */
     public function setActive($active)
     {
-        $this->active = $active;
+        $this->active = (bool) $active === true;
 
         return $this;
     }

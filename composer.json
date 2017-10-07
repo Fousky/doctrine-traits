@@ -4,7 +4,7 @@
     "type": "library",
     "license": "MIT",
     "require": {
-        "php": ">=7.0",
+        "php": ">=7.1",
         "doctrine/orm": "^2.5"
     },
     "authors": [
@@ -17,5 +17,5 @@
     "autoload": {
         "psr-4": { "Fousky\\Traits\\": "src" }
     },
-    "version": "1.0.0"
+    "version": "2.0.0"
 }
