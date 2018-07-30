@@ -7,15 +7,17 @@
         "php": ">=7.1",
         "doctrine/orm": "^2.5"
     },
+    "suggest": {
+        "ramsey/uuid-doctrine": "If you want use Uuid traits for Doctrine."
+    },
     "authors": [
         {
             "name": "Lukáš Brzák",
-            "email": "lukas.brzak@email.cz"
+            "email": "lukas.brzak@fousky.cz"
         }
     ],
-    "minimum-stability": "stable",
     "autoload": {
         "psr-4": { "Fousky\\Traits\\": "src" }
     },
-    "version": "2.0.0"
+    "version": "2.1.0"
 }
