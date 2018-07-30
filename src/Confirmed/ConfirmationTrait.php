@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * User account is `confirmed` OR `non-confirmed` (e.g. by email address).
  *
- * @author Lukáš Brzák <lukas.brzak@aquadigital.cz>
+ * @author Lukáš Brzák <lukas.brzak@fousky.cz>
  */
 trait ConfirmationTrait
 {
@@ -32,68 +32,41 @@ trait ConfirmationTrait
      */
     protected $confirmedAt;
 
-    /**
-     * @return bool
-     */
     public function isConfirmed(): bool
     {
         return $this->confirmed === true;
     }
 
-    /**
-     * @param bool $confirmed
-     *
-     * @return $this
-     */
-    public function setConfirmed($confirmed)
+    public function setConfirmed(bool $confirmed): self
     {
         $this->confirmed = $confirmed;
 
         return $this;
     }
 
-    /**
-     * @return null|string
-     */
     public function getConfirmationToken(): ?string
     {
         return $this->confirmationToken;
     }
 
-    /**
-     * @return bool
-     */
     public function hasConfirmationToken(): bool
     {
         return $this->confirmationToken !== null;
     }
 
-    /**
-     * @param null|string $confirmationToken
-     *
-     * @return $this
-     */
-    public function setConfirmationToken($confirmationToken)
+    public function setConfirmationToken(?string $confirmationToken): self
     {
         $this->confirmationToken = $confirmationToken;
 
         return $this;
     }
 
-    /**
-     * @return \DateTime|null
-     */
     public function getConfirmedAt(): ?\DateTime
     {
         return $this->confirmedAt;
     }
 
-    /**
-     * @param \DateTime|null $confirmedAt
-     *
-     * @return $this
-     */
-    public function setConfirmedAt($confirmedAt)
+    public function setConfirmedAt(?\DateTime $confirmedAt): self
     {
         $this->confirmedAt = $confirmedAt;
 

@@ -7,6 +7,9 @@
         "php": ">=7.1",
         "doctrine/orm": "^2.5"
     },
+    "require-dev": {
+        "ramsey/uuid-doctrine": "^1.4"
+    },
     "suggest": {
         "ramsey/uuid-doctrine": "If you want use Uuid traits for Doctrine."
     },
@@ -19,5 +22,5 @@
     "autoload": {
         "psr-4": { "Fousky\\Traits\\": "src" }
     },
-    "version": "2.1.0"
+    "version": "3.0.0"
 }

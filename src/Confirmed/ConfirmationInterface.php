@@ -1,50 +1,23 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace Fousky\Traits\Confirmed;
 
 /**
- * @author Lukáš Brzák <lukas.brzak@aquadigital.cz>
+ * @author Lukáš Brzák <lukas.brzak@fousky.cz>
  */
 interface ConfirmationInterface
 {
-    /**
-     * @return bool
-     */
     public function isConfirmed(): bool;
 
-    /**
-     * @param bool $confirmed
-     *
-     * @return $this
-     */
-    public function setConfirmed($confirmed);
+    public function setConfirmed(bool $confirmed);
 
-    /**
-     * @return null|string
-     */
     public function getConfirmationToken(): ?string;
 
-    /**
-     * @return bool
-     */
     public function hasConfirmationToken(): bool;
 
-    /**
-     * @param null|string $confirmationToken
-     *
-     * @return $this
-     */
-    public function setConfirmationToken($confirmationToken);
+    public function setConfirmationToken(?string $confirmationToken);
 
-    /**
-     * @return \DateTime|null
-     */
     public function getConfirmedAt(): ?\DateTime;
 
-    /**
-     * @param \DateTime|null $confirmedAt
-     *
-     * @return $this
-     */
-    public function setConfirmedAt($confirmedAt);
+    public function setConfirmedAt(?\DateTime $confirmedAt);
 }

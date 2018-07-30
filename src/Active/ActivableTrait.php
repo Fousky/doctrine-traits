@@ -1,13 +1,11 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace Fousky\Traits\Active;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * `active` OR `inactive` (disabled).
- *
- * @author Lukáš Brzák <lukas.brzak@aquadigital.cz>
+ * @author Lukáš Brzák <lukas.brzak@fousky.cz>
  */
 trait ActivableTrait
 {
@@ -18,22 +16,14 @@ trait ActivableTrait
      */
     protected $active = true;
 
-    /**
-     * @return bool
-     */
     public function isActive(): bool
     {
         return $this->active;
     }
 
-    /**
-     * @param bool $active
-     *
-     * @return $this
-     */
-    public function setActive($active)
+    public function setActive(bool $active): self
     {
-        $this->active = (bool) $active === true;
+        $this->active = $active;
 
         return $this;
     }

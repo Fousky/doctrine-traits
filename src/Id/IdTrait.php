@@ -1,11 +1,11 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace Fousky\Traits\Id;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @author Lukáš Brzák <lukas.brzak@aquadigital.cz>
+ * @author Lukáš Brzák <lukas.brzak@fousky.cz>
  */
 trait IdTrait
 {

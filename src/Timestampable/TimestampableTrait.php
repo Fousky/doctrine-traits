@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace Fousky\Traits\Timestampable;
 
@@ -7,12 +7,12 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\HasLifecycleCallbacks()
  *
- * @author Lukáš Brzák <lukas.brzak@aquadigital.cz>
+ * @author Lukáš Brzák <lukas.brzak@fousky.cz>
  */
 trait TimestampableTrait
 {
     /**
-     * @var \DateTime
+     * @var \DateTime|null
      *
      * @ORM\Column(name="created_at", type="datetime", nullable=false)
      */
@@ -46,40 +46,24 @@ trait TimestampableTrait
         $this->updatedAt = new \DateTime();
     }
 
-    /**
-     * @return \DateTime
-     */
     public function getCreatedAt(): ?\DateTime
     {
         return $this->createdAt;
     }
 
-    /**
-     * @param \DateTime $createdAt
-     *
-     * @return $this
-     */
-    public function setCreatedAt($createdAt)
+    public function setCreatedAt(?\DateTime $createdAt): self
     {
         $this->createdAt = $createdAt;
 
         return $this;
     }
 
-    /**
-     * @return \DateTime|null
-     */
     public function getUpdatedAt(): ?\DateTime
     {
         return $this->updatedAt;
     }
 
-    /**
-     * @param \DateTime|null $updatedAt
-     *
-     * @return $this
-     */
-    public function setUpdatedAt($updatedAt)
+    public function setUpdatedAt(?\DateTime $updatedAt): self
     {
         $this->updatedAt = $updatedAt;
 

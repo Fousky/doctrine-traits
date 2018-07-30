@@ -1,21 +1,13 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace Fousky\Traits\Active;
 
 /**
- * @author Lukáš Brzák <lukas.brzak@aquadigital.cz>
+ * @author Lukáš Brzák <lukas.brzak@fousky.cz>
  */
 interface ActivableInterface
 {
-    /**
-     * @return bool
-     */
     public function isActive(): bool;
 
-    /**
-     * @param bool $active
-     *
-     * @return $this
-     */
-    public function setActive($active);
+    public function setActive(bool $active);
 }
